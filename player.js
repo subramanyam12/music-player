@@ -29,8 +29,8 @@ let musicIndex=Math.floor((Math.random()*allMusic.length)+1);
 function loadMusic(musicIndex){
   songname.innerText=allMusic[musicIndex-1].name;
   artist.innerText=allMusic[musicIndex-1].artist;
-  imgarea.src=`/player/${allMusic[musicIndex-1].img}.jpg`;
-  mainAudio.src=`/player/${allMusic[musicIndex-1].src}.mp3`;
+  imgarea.src=`/music-player/${allMusic[musicIndex-1].img}.jpg`;
+  mainAudio.src=`/music-player/${allMusic[musicIndex-1].src}.mp3`;
 
 };
 
@@ -261,7 +261,7 @@ for (let i = 0; i < allMusic.length; i++) {
       <p class="artist">${allMusic[i].artist}</p>
     </div>
     <audio class="${allMusic[i].src} " src="/subbu/${allMusic[i].src}.mp3"></audio>
-    <span id="${allMusic[i].src}" class="duration">3:45</span>
+    <span id="${allMusic[i].src}" class="duration"></span>
     
   </li>
   <hr>`;
