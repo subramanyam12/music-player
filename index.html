@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>music player</title>
+  <link rel="stylesheet" href="player.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<div class="container">
+  
+  <div class="imgarea">
+    <img src="" alt="">
+    
+  </div>
+    <div class="pbararea">
+      <div class="pbar"></div>
+  </div>
+    <div class="duration">
+    <span id="ctime">00:00</span>
+    <span id="ttime">0:00</span>
+  </div>
+  <div class="sdetails">
+    <span class="name"></span>
+    <p class="artist"></p>
+  </div>
+  <audio id="audio" src=""></audio>
+
+  <div class="controls">
+   <ion-icon id="back" name="play-skip-back"></ion-icon>
+   <div class="play">
+        <i id="play" class="material-icons play">play_arrow</i>
+    </div>
+  <ion-icon id="forward" name="play-skip-forward"></ion-icon>
+    
+  </div>
+  <div class="mtool">
+    <ion-icon id="menu" name="list"></ion-icon>
+  <ion-icon id="heart" name="heart-outline"></ion-icon>
+    
+     <i id="repeat" class="material-icons" title="Playlist looped">repeat</i>
+    <ion-icon name="ellipsis-horizontal"></ion-icon>
+  </div>
+  
+ 
+  
+<div class="musiclist">
+   <div class="topbar">
+     
+     <ion-icon class="close" name="arrow-back-outline"></ion-icon>
+     <p>Current Playlist</p>
+    
+     <span id="done" class="close">Done</span>
+   </div>
+   <ul class="list">
+     
+   </ul>
+ 
+</div>
+  
+</div>
+<script src="/player/allmusic.js"></script>
+<script src="/player/player.js"></script>
+</body>
+
+</html>
